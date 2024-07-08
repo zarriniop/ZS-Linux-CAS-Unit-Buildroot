@@ -1,0 +1,8 @@
+
+#!/bin/sh
+
+# Start dnsmasq
+dnsmasq -C /etc/dnsmasq/dnsmasq.conf
+
+
+
