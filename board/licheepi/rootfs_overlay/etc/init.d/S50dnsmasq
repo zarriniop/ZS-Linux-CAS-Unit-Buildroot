@@ -2,6 +2,7 @@
 #!/bin/sh
 
 # Start dnsmasq
+mkdir -p /var/run/
 dnsmasq -C /etc/dnsmasq/dnsmasq.conf
 
 
