@@ -1,0 +1,13 @@
+prefix=/home/nima/projects/ZS-CAS/buildroot-2022.05/output/host/arm-buildroot-linux-gnueabihf/sysroot//home/nima/projects/ZS-CAS/qt-everywhere-src-5.15.0/build/usr/local/qt5
+exec_prefix=${prefix}
+libdir=/home/nima/projects/ZS-CAS/qt-everywhere-src-5.15.0/build/usr/local/qt5/lib
+includedir=/home/nima/projects/ZS-CAS/qt-everywhere-src-5.15.0/build/usr/local/qt5/include
+
+
+Name: Qt5 Svg
+Description: Qt Svg module
+Version: 5.15.0
+Libs: -L${libdir} -lQt5Svg 
+Cflags: -DQT_SVG_LIB -I${includedir}/QtSvg -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

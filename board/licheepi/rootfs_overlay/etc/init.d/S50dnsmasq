@@ -3,6 +3,4 @@
 
 # Start dnsmasq
 dnsmasq -C /etc/dnsmasq/dnsmasq.conf
-
-
-
+mkdir /var/lock

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+ifdown eth0
+ifup eth0
+ifconfig eth0 down
+ifconfig eth0 up
+ifdown usb0
+ifup usb0
+/etc/init.d/S40network restart
+
+#export QT_QPA_PLATFORM=linuxfb
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/qt5/lib
+#chmod +x /root/GUI/untitled3
+#/root/GUI/untitled3
